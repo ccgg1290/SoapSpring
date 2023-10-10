@@ -1,0 +1,36 @@
+pipeline{
+   Agent {Label Main}
+
+     Stages{
+       
+       Stage("install"){
+
+          //sh   "mvn "
+          echo "Supuestamente esta compilando"
+
+
+        }
+       Stage("Build"){
+
+         // sh   "Build aplication"
+            echo "Supuestamente esta contruyendo"
+
+
+
+        }
+
+       Stage("createdocker"){
+
+          //sh   "mvn compile test"
+
+           echo "Supuestamente crando docker"
+       }
+       
+        
+
+
+     }
+
+
+
+}
