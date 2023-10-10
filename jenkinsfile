@@ -1,5 +1,5 @@
 pipeline{
-   Agent {Label main}
+   Agent any
 
      Stages{
        
