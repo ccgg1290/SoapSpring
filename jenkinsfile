@@ -1,22 +1,21 @@
-pipeline{
-   agent any
+pipeline {
+    agent any
 
-  
-
-   Stages{
-       
-       Stage("install"){
-          steps{ echo "Supuestamente esta compilando"}
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building..'
+            }
         }
-       Stage("Build"){
-            steps{echo "Supuestamente esta contruyendo" }           
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
         }
-
-       Stage("createdocker"){
-           steps{echo "Supuestamente creando docker"}
-       }
-       
-   }
-
-
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
+    }
 }
