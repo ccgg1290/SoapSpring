@@ -1,36 +1,22 @@
 pipeline{
    agent any
 
-     Stages{
+  
+
+   Stages{
        
        Stage("install"){
-
-          
-          echo "Supuestamente esta compilando"
-
-
+          steps{ echo "Supuestamente esta compilando"}
         }
        Stage("Build"){
-
-        
-            echo "Supuestamente esta contruyendo"
-
-
-
+            steps{echo "Supuestamente esta contruyendo" }           
         }
 
        Stage("createdocker"){
-
-          
-
-           echo "Supuestamente crando docker"
+           steps{echo "Supuestamente creando docker"}
        }
        
-        
-
-
-     }
-
+   }
 
 
 }
